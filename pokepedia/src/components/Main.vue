@@ -1,9 +1,10 @@
 <template>
 <div class="container">
-  <h1>Pokepedia</h1>
+  <img src="../assets/pokeball.png" alt="Pokeball" width="20%">
+  <h1 class="title">Pokepedia</h1>
   <h2 v-if="pokemonList.length < 1">Loading...</h2>
   <template v-if="pokemonList.length">
-    <div class="row">
+    <div class="row searchContainer">
           <div class="col-xs-12 col-sm-6 col-sm-offset-3">
             <input type="text" class="form-control search" placeholder="Search" v-model="search">
           </div>
@@ -40,6 +41,10 @@
   }
 </script>
 <style scoped>
+  .title {
+    margin-top: 0px;
+  }
+
   .pokemon {
     text-transform:capitalize;
     text-align: left;
@@ -48,6 +53,10 @@
 
   .pokemon:hover > h4{
     font-weight: bold;
+  }
+
+  .searchContainer {
+    margin-bottom: 10px;
   }
 
   .search{
