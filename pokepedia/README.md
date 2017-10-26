@@ -5,9 +5,6 @@
 ## Build Setup
 
 ``` bash
-# move to project folder
-cd pokepedia
-
 # install dependencies
 npm install
 
