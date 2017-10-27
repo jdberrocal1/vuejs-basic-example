@@ -11,7 +11,6 @@ Vue.config.productionTip = false
 
 // http requests config
 Vue.use(VueResource)
-Vue.http.options.root = 'https://pokeapi.co/api/v2/'
 
 /* eslint-disable no-new */
 new Vue({
